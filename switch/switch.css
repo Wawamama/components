@@ -1,3 +1,15 @@
+:root {
+  --colorOne: blue;
+  --colorTwo: rgb(109, 109, 238);
+}
+
+body {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .switch {
     position: relative;
     height: 25px;
@@ -17,7 +29,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--lightergrayishblue);
+  background-color: var(--colorTwo);
   border-radius: 35px;
   -webkit-transition: .4s;
   transition: .4s; 
@@ -39,7 +51,7 @@
 }
 
 input[type='checkbox']:checked + .switch_slider {
-    background-color:var(--strongcyan);
+    background-color:var(--colorOne);
 }
 
 input[type='checkbox']:checked + .switch_slider::before {
